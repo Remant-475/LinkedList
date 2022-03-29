@@ -47,6 +47,11 @@ namespace LinkedList
             int data1 = int.Parse(Console.ReadLine());
             linkedlist.AddSpecificNode(node6, data1);
             linkedlist.Display();
+
+            Console.WriteLine("Select node for deletion");
+            data = int.Parse(Console.ReadLine());
+            linkedlist.DeleteSpecificNode(data);
+            linkedlist.Display();
         }
     }
 }
