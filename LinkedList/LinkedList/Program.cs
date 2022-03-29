@@ -11,6 +11,12 @@ namespace LinkedList
             Node node2 = new Node(24);
             Node node3 = new Node(25);
 
+            linkedlist.AddNode(node1);
+            linkedlist.AddNode(node2);
+            linkedlist.AddNode(node3);
+
+            linkedlist.Display();
         }
     }
 }
+
