@@ -4,7 +4,7 @@ namespace LinkedList
 {
     class Program
     {
-        static void Main()
+        public static void Main(string[]args)
         {
             Linkedlist linkedlist = new Linkedlist();
             Node node1 = new Node(23);
@@ -29,6 +29,18 @@ namespace LinkedList
             
             linkedlist.DeleteEndNode();
             linkedlist.Display();
+            Console.WriteLine("Enter Number want to Search");
+            
+            int data = int.Parse(Console.ReadLine());
+            bool res = linkedlist.search(data);
+            if (res == true)
+            {
+                Console.WriteLine("Data is found");
+            }
+            else
+            {
+                Console.WriteLine("Data is not found");
+            }
         }
     }
 }
