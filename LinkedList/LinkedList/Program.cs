@@ -26,6 +26,9 @@ namespace LinkedList
             
             linkedlist.DeleteNodeatFirst();
             linkedlist.Display();
+            
+            linkedlist.DeleteEndNode();
+            linkedlist.Display();
         }
     }
 }
