@@ -41,6 +41,12 @@ namespace LinkedList
             {
                 Console.WriteLine("Data is not found");
             }
+            Node node6 = new Node(40);
+            linkedlist.Display();
+            Console.WriteLine("select position you want to add number");
+            int data1 = int.Parse(Console.ReadLine());
+            linkedlist.AddSpecificNode(node6, data1);
+            linkedlist.Display();
         }
     }
 }
