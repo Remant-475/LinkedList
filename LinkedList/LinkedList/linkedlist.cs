@@ -65,6 +65,18 @@ namespace LinkedList
                 Tail = node;
             }
         }
-
+        public void AddNodeatStart(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                node.next = Head;
+                Head = node;
+            }
+        }
     }
 }
