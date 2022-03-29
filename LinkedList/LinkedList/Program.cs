@@ -20,8 +20,11 @@ namespace LinkedList
             linkedlist.AppendNode(node4);
             linkedlist.Display();
 
-            Node node5 = new Node(28);
+            Node node5 = new Node(29);
             linkedlist.AddNodeatStart(node5);
+            linkedlist.Display();
+            
+            linkedlist.DeleteNodeatFirst();
             linkedlist.Display();
         }
     }
